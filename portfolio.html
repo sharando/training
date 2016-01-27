@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="ID=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<title>Bootstrap Demo</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<style>
+			.rowspacer{
+				padding:10px 10px 10px 10px;
+			}
+						
+			#portfolio > div{
+				margin:auto;
+				padding: 10px 10px 10px 10px;
+			}
+			
+			/*
+			.athumbnail {
+				padding:10px 10px 10px 10px;
+				margin:auto;
+			}
+			*/
+		</style>
+	</head>
+	<body>
+		<nav id="mainnavbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<!-- header and brand -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mysite-navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Bootstrap Demo Site</a>
+				</div>
+				<!-- links and content -->
+				<div class="collapse navbar-collapse" id="mysite-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<!-- home link -- note active class highlights the text -->
+						<li class=""><a href="index.html">Home</a></li>
+						<!-- portfolio link -- standard with no highlight -->
+						<li class="active"><a href="portfolio.html">Portfolio</a></li>
+						<!-- products Dropdown -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span>Products <span class="caret"></span></span>							
+							</a>
+							<ul class="dropdown-menu">
+							  <li><a href="products.html?prodid=1">Kitchen</a></li>
+							  <li><a href="products.html?prodid=2">Home &amp; Garden</a></li>
+							  <li><a href="products.html?prodid=3">Auto parts &amp; Accessories</a></li>
+							  <li><a href="products.html?prodid=4">Hardware &amp; Paint Supplies</a></li>	
+							  <li><a href="products.html?prodid=5&pageID=1">Entertainment</a></li>
+						    </ul>								
+						</li>
+						<li class="">
+							<a href="contactus.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>		
+
+		<div class="jumbotron" style="background-image:url('images/banner.png');">
+			<div class="container">
+				<h3>Our portfolio is vast and accomplished:</h3>
+				<span>Here you can see the jumbotron living outside of the container, note that it spans the width.</span>
+				<br />
+				<span>You may also add in any styling to override the base, such as a background image as shown here.</span>
+				<br /><br />
+				<div class="btn-group">
+					<div class="btn btn-primary">Pick Me</div>
+					<div class="btn btn-info">Pick Me Instead</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<div class="container-fluid" id="maincontainer">
+			<div class="row-fluid">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="jumbotron">
+						<h3>Our portfolio is vast and accomplished:</h3>
+						<span>Here you can see the jumbotron living inside of the container, note that it is contained.</span>
+						<br />
+						<span>As usual, the content and style of the item is completely up to you</span>
+						<br /><br />
+						<div class="btn-group">
+							<div class="btn btn-success">Pick Me</div>
+							<div class="btn btn-danger">Pick Me Instead</div>
+						</div>
+						
+					</div>					
+				</div>
+			</div>
+		</div>
+		-->
+		
+		<!-- portfolio content here -->
+		<div class="container-fluid" id="portfoliocontainer">
+			<div class="row-fluid">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					
+						<div id="portfolio">
+							
+								<div class="athumbnail col-xs-6 col-sm-6 col-md-6 col-lg-4">
+									<div class="thumbnail" style="margin:auto;">
+										<img src="images/portfolio1.png" alt="Web Services" />
+								      	<div class="caption">
+								        	<h3>Web Services</h3>
+								        	<p>A few details about the service here</p>
+								        	<p class="btn-group btn-group-justified">
+								        		<a href="portfolioitem.html" class="btn btn-success" role="button">Details</a>
+								        	</p>
+								      	</div>
+									</div>
+								</div>
+								
+								<div class="athumbnail col-xs-6 col-sm-6 col-md-6 col-lg-4">
+									<div class="thumbnail">
+										<img src="images/portfolio2.png" alt="Business Planning" />
+								      	<div class="caption">
+								        	<h3>Business Planning</h3>
+								        	<p>A few details about the service here</p>
+								        	<p class="btn-group btn-group-justified">
+								        		<a href="portfolioitem.html" class="btn btn-success" role="button">Details</a>
+								        	</p>
+								      	</div>
+									</div>
+								</div>
+								
+								<div class="athumbnail col-xs-6 col-sm-6 col-md-6 col-lg-4">
+									<div class="thumbnail">
+										<img src="images/portfolio3.png" alt="Accounting" />
+								      	<div class="caption">
+								        	<h3>Accounting</h3>
+								        	<p>A few details about the service here</p>
+								        	<p class="btn-group btn-group-justified">
+								        	    <a href="portfolioitem.html" class="btn btn-success" role="button">Details</a>
+								        	</p>
+								      	</div>
+									</div>
+								</div>
+						
+						</div><!-- end portfolio -->
+					
+				</div><!-- end col-xs-12 col-sm-12 col-md-12 col-lg-12-->		
+			</div><!-- end row fluid -->
+		</div><!-- end portfoliocontainer-->
+		 
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				resizeTopPadding();
+				$(window).resize(function(){
+					resizeTopPadding();
+				});
+			});
+			
+			function resizeTopPadding(){
+				var navheight = $("#mainnavbar").height();
+				navheight += 5;
+				$("#maincontainer").css("padding-top", navheight + 'px');
+			}
+		</script>
+	</body>
+	
+</html>
